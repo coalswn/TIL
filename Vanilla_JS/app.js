@@ -10,7 +10,9 @@ console.log(krAge); // return안하면 undefined
 
 const calculator = {
     plus : function (a, b) {
-        return a + b;
+        console.log("Hello!");
+        return a + b;  // 값은 돌아오는 거야!
+        console.log("bye bye!"); // 작동 X. return 하면 함수는 작동을 멈추고 결과값을 return하고 종료됨.
     },
     minus: function (a, b) {
         return a - b;
