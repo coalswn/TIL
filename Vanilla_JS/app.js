@@ -35,3 +35,5 @@ const powerResult = calculator.power(divideResult, minusResult);
 
 console.log(plusResult); // 오오...console에 변수만 쳐도 값 나옴
 
+
+
