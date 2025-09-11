@@ -125,6 +125,20 @@ console.log(plusResult); // 오오...console에 변수만 쳐도 값 나옴
 
 // console.log(parseInt(age)); // 숫자가 아닌걸 입력했을 때 NaN이 나와서 알수있음
 
-const age00 = parseInt(prompt("How old are you?")); 
+const age2 = parseInt(prompt("How old are you?")); 
 
-console.log(age00);
+// console.log(isNaN(age2)); // 뭐가 Nat a number인지 boolean으로 반환해줌.
+
+// if(condition){
+//     /// condition === true 
+// } else {
+//     // condition === false
+// }
+
+if(isNaN(age)){ // true
+    /// condition === true
+    console.log("Please write a number"); 
+} else { // false
+    // condition === false
+    console.log("Thank you for writing your age."); 
+}

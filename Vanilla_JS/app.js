@@ -7,4 +7,18 @@
 
 const age = parseInt(prompt("How old are you?")); 
 
-console.log(age);
+// console.log(isNaN(age)); // 뭐가 Nat a number인지 boolean으로 반환해줌.
+
+// if(condition){
+//     /// condition === true 
+// } else {
+//     // condition === false
+// }
+
+if(isNaN(age)){ // true
+    /// condition === true
+    console.log("Please write a number"); 
+} else { // false
+    // condition === false
+    console.log("Thank you for writing your age."); 
+}
