@@ -15,10 +15,27 @@ const age = parseInt(prompt("How old are you?"));
 //     // condition === false
 // }
 
-if(isNaN(age)){ // true
+true && true === true
+false && true === false
+true && false === false
+false && false === false
+
+true || true === true
+false || true === true
+true || false === true
+false || false === false
+
+
+if (isNaN(age) || age < 0){ // true
     /// condition === true
-    console.log("Please write a number"); 
-} else { // false
+    console.log("Please write a real positive number");  // 정수 입력
+} else if (age < 18) { // false
     // condition === false
-    console.log("Thank you for writing your age."); 
+    console.log("You are too young."); 
+} else if (age >= 18 && age <= 50) { 
+    console.log("You can drink."); 
+} else if (age > 50 && age <= 80){ 
+    console.log("You should exercise."); 
+} else if (age > 80) {
+    console.log("You can do whatever you want.");
 }
